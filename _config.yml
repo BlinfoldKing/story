@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/story"
-url: "https://blinfoldking.github.io/"
+baseurl: "/"
+url: "https://story.blinfoldking.dev/"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
