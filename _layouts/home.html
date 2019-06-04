@@ -19,8 +19,10 @@ layout: default
             {{ post.title }}
           </a>
         </h1>
+        {% assign words = post.content | number_of_words %}
         <p class="meta">
           {{ post.date | date: "%B %-d, %Y" }}
+          - {{ words | divided_by:180 | at_least: 1 }} mins
         </p>
       </header>
       <div class="excerpt">

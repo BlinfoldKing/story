@@ -21,8 +21,10 @@ layout: page
               {{ post.title }}
             </a>
           </h3>
+        {% assign words = post.content | number_of_words %}
           <div class="meta">
             {{ post.date | date: "%B %-d, %Y" }}
+          - {{ words | divided_by:180 | at_least: 1 }} mins
           </div>
         </div>
       {% endif %}
